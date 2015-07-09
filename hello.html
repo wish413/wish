@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Sea.js</title>
+</head>
+<body>
+    <div id="container">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKb32QfE.png" width="44" height="44" alt="H">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKb2rJHI.png" width="44" height="44" alt="e">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKeZrUpg.png" width="44" height="44" alt="l">
+        <img src="https://i.alipayobjects.com/e/201211/1cqM4u3Ejk.png" width="44" height="44" alt="l">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKoKV2Sa.png" width="44" height="44" alt="o">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKb4JU4K.png" width="44" height="44" alt=",">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKojFDLY.png" width="44" height="44" alt="S">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKb2sBO8.png" width="44" height="44" alt="e">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKb2LmXk.png" width="44" height="44" alt="a">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKb1jcWC.png" width="44" height="44" alt="J">
+        <img src="https://i.alipayobjects.com/e/201211/1cqKojb72y.png" width="44" height="44" alt="S">
+    </div>
+    <script src="./sea-modules/seajs/seajs/2.2.3/sea.js"></script>
+    <script src="./dist/application.js"></script>
+    <script>
+        /*var x = 0, total = 9, price_range = [1,2,2,5,10];
+        function a(b) {
+            if ( (total-b) > 0) {
+                total = total -b;
+                x += 1;
+                return true;
+            } else {
+                x += total/b;
+                total = 0;
+                return false;
+            }
+        }
+        function cal(range) {
+            for (var i = 0; i < range.length; i++) {
+                a(range[i]);
+            };
+        }
+        cal();
+
+        console.log(x);
+        console.log(x/(price_range.length)*100 + '%');*/
+        // Set configuration
+        seajs.config({
+            // base: "/sea/sea-modules/",
+            alias: {
+                "jquery": "jquery/jquery/2.1.0/jquery"
+            }
+        });
+        seajs.use("src/application/application");
+    </script>
+</body>
+</html>
